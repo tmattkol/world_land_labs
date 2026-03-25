@@ -8,12 +8,20 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#F8FAF7] text-[#0F2A44] font-sans">
-      {/* NAVBAR */}
-      <nav className="bg-white shadow-sm  top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+          {/* NAVBAR - sticky + logo enlarges on hover over entire nav */}
+      <nav className="bg-white shadow-sm sticky top-0 z-50 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <div className="transition-transform hover:scale-110 duration-300">
-              <Image src="/wll_logo.png" alt="World Land Labs" width={200} height={65} className="h-50 w-auto" />
+            {/* Logo container - stays compact, enlarges only on hover */}
+            <div className="transition-transform hover:scale-125 duration-300 origin-left">
+              <Image 
+                src="/wll_logo.png" 
+                alt="World Land Labs" 
+                width={200} 
+                height={65} 
+                className="h-12 w-auto" 
+              />
             </div>
           </div>
 
@@ -27,16 +35,16 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-4">
-            <a 
-              href="/whitepaper.pdf" 
-              download 
+            <a
+              href="/whitepaper.pdf"
+              download
               className="bg-[#A8D5BA] hover:bg-[#6BB89C] text-white px-6 py-3 rounded-2xl text-sm font-semibold transition hidden sm:flex"
             >
               Download Whitepaper
             </a>
 
             {/* Hamburger */}
-            <button 
+            <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden text-3xl focus:outline-none"
               aria-label="Toggle menu"
@@ -116,33 +124,25 @@ export default function Home() {
           <h2 className="text-4xl font-semibold text-center mb-12">Rental Income Split – Aligned for Everyone</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
-              <div className="relative w-[420px] h-[420px] overflow-visible">
+              <div className="relative w-full max-w-[380px] md:max-w-[420px] h-[380px] md:h-[420px] overflow-visible mx-auto">
                 <svg className="w-full h-full -rotate-20" viewBox="0 0 100 100">
                   <circle cx="50" cy="50" r="42.5" fill="none" stroke="#A8D5BA" strokeWidth="15" strokeDasharray="251.2 0" />
                   <circle cx="50" cy="50" r="42.5" fill="none" stroke="#0F2A44" strokeWidth="15" strokeDasharray="62.8 251.2" strokeDashoffset="251.2" />
                   <circle cx="50" cy="50" r="42.5" fill="none" stroke="#B0D8FF" strokeWidth="15" strokeDasharray="62.8 251.2" strokeDashoffset="188.4" />
                 </svg>
-
-                {/* LEGEND - outer columns moved inward + vertical lines */}
+                {/* LEGEND - perfectly centered on mobile */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-                  <div className="text-[50px] font-bold leading-none">100%</div>
-
-                  {/* Tighter legend with vertical dividers */}
-                  <div className="mt-8 flex justify-center gap-7 text-base font-medium max-w-[360px] mx-auto">
-                    {/* 40% column */}
-                    <div className="text-center pr-2 border-r border-[#0F2A44]/20">
+                  <div className="text-[42px] md:text-[50px] font-bold leading-none">100%</div>
+                  <div className="mt-8 flex justify-center gap-6 md:gap-8 text-base font-medium max-w-[320px] md:max-w-[360px] mx-auto">
+                    <div className="text-center pr-4 border-r border-[#0F2A44]/20">
                       <span className="block text-[#A8D5BA] text-[18px] font-bold">40%</span>
                       <span className="text-[10px]">Tenants<br/>(vested SOLQ)</span>
                     </div>
-
-                    {/* 50% column (center) */}
                     <div className="text-center">
                       <span className="block text-[#0F2A44] text-[18px] font-bold">50%</span>
                       <span className="text-[10px]">PLC Fund<br/>(MLB + ops)</span>
                     </div>
-
-                    {/* 10% column */}
-                    <div className="text-center pl-2 border-l border-[#0F2A44]/20">
+                    <div className="text-center pl-4 border-l border-[#0F2A44]/20">
                       <span className="block text-[#B0D8FF] text-[18px] font-bold">10%</span>
                       <span className="text-[10px]">Token Holders</span>
                     </div>
@@ -175,7 +175,7 @@ export default function Home() {
               <li>Vote on important issues (weighted by tenancy length)</li>
             </ul>
           </div>
-          <div className="text-sm bg-[#E8F5E9] p-8 rounded-3xl flex flex-col justify-center h-full">
+          <div className="text-sm bg-[#E8F5E9] p-8 rounded-3xl flex flex-col justify-center items-center text-center h-full min-h-[260px] mx-auto">
             <p className="font-semibold">Pro Forma Example (one unit, 20 years)</p>
             <p className="text-6xl font-bold text-[#A8D5BA]">$376,920</p>
             <p className="text-[#0F2A44]/70">in vested SOLQ rebates while paying below-market rent</p>
