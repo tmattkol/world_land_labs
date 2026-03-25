@@ -9,11 +9,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#F8FAF7] text-[#0F2A44] font-sans overflow-x-hidden">
 
-          {/* NAVBAR - sticky + logo enlarges on hover over entire nav */}
+               {/* NAVBAR - sticky + logo enlarges on hover over entire nav */}
       <nav className="bg-white shadow-sm sticky top-0 z-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            {/* Logo container - stays compact, enlarges only on hover */}
             <div className="transition-transform hover:scale-125 duration-300 origin-left">
               <Image 
                 src="/wll_logo.png" 
@@ -43,7 +42,6 @@ export default function Home() {
               Download Whitepaper
             </a>
 
-            {/* Hamburger */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden text-3xl focus:outline-none"
@@ -134,16 +132,16 @@ export default function Home() {
                   <div className="text-[42px] md:text-[50px] font-bold leading-none">100%</div>
                   <div className="mt-8 flex justify-center gap-6 md:gap-8 text-base font-medium max-w-[300px] md:max-w-[360px] mx-auto">
                     <div className="text-center pr-4 border-r border-[#0F2A44]/20">
-                      <span className="block text-[#A8D5BA] text-[18px] font-bold">40%</span>
-                      <span className="text-[10px]">Tenants<br/>(vested SOLQ)</span>
+                      <span className="block text-[#A8D5BA] text-[17px] font-bold">40%</span>
+                      <span className="text-[9px]">Tenants<br/>(vested SOLQ)</span>
                     </div>
                     <div className="text-center">
-                      <span className="block text-[#0F2A44] text-[18px] font-bold">50%</span>
-                      <span className="text-[10px]">PLC Fund<br/>(MLB + ops)</span>
+                      <span className="block text-[#0F2A44] text-[17px] font-bold">50%</span>
+                      <span className="text-[9px]">PLC Fund<br/>(MLB + ops)</span>
                     </div>
                     <div className="text-center pl-4 border-l border-[#0F2A44]/20">
-                      <span className="block text-[#B0D8FF] text-[18px] font-bold">10%</span>
-                      <span className="text-[10px]">Token Holders</span>
+                      <span className="block text-[#B0D8FF] text-[17px] font-bold">10%</span>
+                      <span className="text-[9px]">Token Holders</span>
                     </div>
                   </div>
                 </div>
