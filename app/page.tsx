@@ -7,7 +7,7 @@ export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#F8FAF7] text-[#0F2A44] font-sans">
+    <div className="min-h-screen bg-[#F8FAF7] text-[#0F2A44] font-sans overflow-x-hidden">
 
           {/* NAVBAR - sticky + logo enlarges on hover over entire nav */}
       <nav className="bg-white shadow-sm sticky top-0 z-50 overflow-hidden">
@@ -124,16 +124,15 @@ export default function Home() {
           <h2 className="text-4xl font-semibold text-center mb-12">Rental Income Split – Aligned for Everyone</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
-              <div className="relative w-full max-w-[380px] md:max-w-[420px] h-[380px] md:h-[420px] overflow-visible mx-auto">
+              <div className="relative w-full max-w-[340px] md:max-w-[420px] h-[380px] md:h-[420px] overflow-visible mx-auto">
                 <svg className="w-full h-full -rotate-20" viewBox="0 0 100 100">
                   <circle cx="50" cy="50" r="42.5" fill="none" stroke="#A8D5BA" strokeWidth="15" strokeDasharray="251.2 0" />
                   <circle cx="50" cy="50" r="42.5" fill="none" stroke="#0F2A44" strokeWidth="15" strokeDasharray="62.8 251.2" strokeDashoffset="251.2" />
                   <circle cx="50" cy="50" r="42.5" fill="none" stroke="#B0D8FF" strokeWidth="15" strokeDasharray="62.8 251.2" strokeDashoffset="188.4" />
                 </svg>
-                {/* LEGEND - perfectly centered on mobile */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
                   <div className="text-[42px] md:text-[50px] font-bold leading-none">100%</div>
-                  <div className="mt-8 flex justify-center gap-6 md:gap-8 text-base font-medium max-w-[320px] md:max-w-[360px] mx-auto">
+                  <div className="mt-8 flex justify-center gap-6 md:gap-8 text-base font-medium max-w-[300px] md:max-w-[360px] mx-auto">
                     <div className="text-center pr-4 border-r border-[#0F2A44]/20">
                       <span className="block text-[#A8D5BA] text-[18px] font-bold">40%</span>
                       <span className="text-[10px]">Tenants<br/>(vested SOLQ)</span>
@@ -175,7 +174,7 @@ export default function Home() {
               <li>Vote on important issues (weighted by tenancy length)</li>
             </ul>
           </div>
-          <div className="text-sm bg-[#E8F5E9] p-8 rounded-3xl flex flex-col justify-center items-center text-center h-full min-h-[260px] mx-auto">
+          <div className="text-sm bg-[#E8F5E9] p-8 rounded-3xl flex flex-col justify-center items-center text-center h-full min-h-[260px] mx-auto max-w-full">
             <p className="font-semibold">Pro Forma Example (one unit, 20 years)</p>
             <p className="text-6xl font-bold text-[#A8D5BA]">$376,920</p>
             <p className="text-[#0F2A44]/70">in vested SOLQ rebates while paying below-market rent</p>
