@@ -9,29 +9,29 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#F8FAF7] text-[#0F2A44] font-sans overflow-x-hidden">
 
-              {/* NAVBAR - sticky + super dramatic logo scale-500 on hover */}
+{/* NAVBAR - logo expands downward dramatically (no clipping) */}
 <nav className="bg-white shadow-sm sticky top-0 z-50">
   <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between h-16">
     <div className="flex items-center gap-3">
-      {/* Clipping container - this is what makes scale-500 safe */}
-      <div className="relative w-40 h-16 overflow-hidden flex-shrink-0">
+      {/* Container sized for downward growth - NO overflow-hidden */}
+      <div className="relative w-[190px] h-[140px] flex-shrink-0">
         <div 
-          className="absolute -top-8 -left-8 transition-transform duration-300 hover:scale-500 origin-top-left pointer-events-none"
+          className="absolute top-1/2 left-0 -translate-y-1/2 transition-transform duration-300 hover:scale-[5] origin-top z-10"
         >
           <Image
             src="/wll_logo.png"
             alt="World Land Labs"
-            width={200}
-            height={65}
-            className="h-[65px] w-auto"
+            width={180}
+            height={58}
+            className="h-[58px] w-auto"
             priority
           />
         </div>
       </div>
     </div>
 
-    {/* Desktop Nav */}
-    <div className="hidden md:flex items-center gap-8 text-sm font-medium">
+    {/* Desktop Nav - stays above the logo */}
+    <div className="hidden md:flex items-center gap-8 text-sm font-medium relative z-20">
       <a href="#how" className="hover:text-[#A8D5BA] transition">How It Works</a>
       <a href="#tenants" className="hover:text-[#A8D5BA] transition">For Tenants</a>
       <a href="#investors" className="hover:text-[#A8D5BA] transition">For Investors</a>
@@ -39,7 +39,7 @@ export default function Home() {
       <a href="#roadmap" className="hover:text-[#A8D5BA] transition">Roadmap</a>
     </div>
 
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-4 relative z-20">
       <a
         href="/whitepaper.pdf"
         download
@@ -57,7 +57,7 @@ export default function Home() {
     </div>
   </div>
 
-  {/* Mobile Menu (unchanged) */}
+  {/* Mobile Menu */}
   {isMenuOpen && (
     <div className="md:hidden bg-white border-t px-6 py-6 flex flex-col gap-6 text-sm font-medium">
       <a href="#how" className="hover:text-[#A8D5BA]" onClick={() => setIsMenuOpen(false)}>How It Works</a>
