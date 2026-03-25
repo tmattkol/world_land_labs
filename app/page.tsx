@@ -9,61 +9,66 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#F8FAF7] text-[#0F2A44] font-sans overflow-x-hidden">
 
-               {/* NAVBAR - sticky + logo enlarges on hover over entire nav */}
-      <nav className="bg-white shadow-sm sticky top-0 z-50 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between h-16">
-          <div className="flex items-center gap-3">
-            <div className="transition-transform hover:scale-125 duration-300 origin-left">
-              <Image 
-                src="/wll_logo.png" 
-                alt="World Land Labs" 
-                width={200} 
-                height={65} 
-                className="h-12 w-auto" 
-              />
-            </div>
-          </div>
-
-          {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-            <a href="#how" className="hover:text-[#A8D5BA] transition">How It Works</a>
-            <a href="#tenants" className="hover:text-[#A8D5BA] transition">For Tenants</a>
-            <a href="#investors" className="hover:text-[#A8D5BA] transition">For Investors</a>
-            <a href="#pilot" className="hover:text-[#A8D5BA] transition">Pilot Property</a>
-            <a href="#roadmap" className="hover:text-[#A8D5BA] transition">Roadmap</a>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <a
-              href="/whitepaper.pdf"
-              download
-              className="bg-[#A8D5BA] hover:bg-[#6BB89C] text-white px-6 py-3 rounded-2xl text-sm font-semibold transition hidden sm:flex"
-            >
-              Download Whitepaper
-            </a>
-
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-3xl focus:outline-none"
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? "✕" : "☰"}
-            </button>
-          </div>
+              {/* NAVBAR - sticky + super dramatic logo scale-500 on hover */}
+<nav className="bg-white shadow-sm sticky top-0 z-50">
+  <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between h-16">
+    <div className="flex items-center gap-3">
+      {/* Clipping container - this is what makes scale-500 safe */}
+      <div className="relative w-40 h-16 overflow-hidden flex-shrink-0">
+        <div 
+          className="absolute -top-8 -left-8 transition-transform duration-300 hover:scale-500 origin-top-left pointer-events-none"
+        >
+          <Image
+            src="/wll_logo.png"
+            alt="World Land Labs"
+            width={200}
+            height={65}
+            className="h-[65px] w-auto"
+            priority
+          />
         </div>
+      </div>
+    </div>
 
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-white border-t px-6 py-6 flex flex-col gap-6 text-sm font-medium">
-            <a href="#how" className="hover:text-[#A8D5BA]" onClick={() => setIsMenuOpen(false)}>How It Works</a>
-            <a href="#tenants" className="hover:text-[#A8D5BA]" onClick={() => setIsMenuOpen(false)}>For Tenants</a>
-            <a href="#investors" className="hover:text-[#A8D5BA]" onClick={() => setIsMenuOpen(false)}>For Investors</a>
-            <a href="#pilot" className="hover:text-[#A8D5BA]" onClick={() => setIsMenuOpen(false)}>Pilot Property</a>
-            <a href="#roadmap" className="hover:text-[#A8D5BA]" onClick={() => setIsMenuOpen(false)}>Roadmap</a>
-            <a href="/whitepaper.pdf" download className="bg-[#A8D5BA] text-white px-6 py-3 rounded-2xl text-center font-semibold">Download Whitepaper</a>
-          </div>
-        )}
-      </nav>
+    {/* Desktop Nav */}
+    <div className="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="#how" className="hover:text-[#A8D5BA] transition">How It Works</a>
+      <a href="#tenants" className="hover:text-[#A8D5BA] transition">For Tenants</a>
+      <a href="#investors" className="hover:text-[#A8D5BA] transition">For Investors</a>
+      <a href="#pilot" className="hover:text-[#A8D5BA] transition">Pilot Property</a>
+      <a href="#roadmap" className="hover:text-[#A8D5BA] transition">Roadmap</a>
+    </div>
+
+    <div className="flex items-center gap-4">
+      <a
+        href="/whitepaper.pdf"
+        download
+        className="bg-[#A8D5BA] hover:bg-[#6BB89C] text-white px-6 py-3 rounded-2xl text-sm font-semibold transition hidden sm:flex"
+      >
+        Download Whitepaper
+      </a>
+      <button
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        className="md:hidden text-3xl focus:outline-none"
+        aria-label="Toggle menu"
+      >
+        {isMenuOpen ? "✕" : "☰"}
+      </button>
+    </div>
+  </div>
+
+  {/* Mobile Menu (unchanged) */}
+  {isMenuOpen && (
+    <div className="md:hidden bg-white border-t px-6 py-6 flex flex-col gap-6 text-sm font-medium">
+      <a href="#how" className="hover:text-[#A8D5BA]" onClick={() => setIsMenuOpen(false)}>How It Works</a>
+      <a href="#tenants" className="hover:text-[#A8D5BA]" onClick={() => setIsMenuOpen(false)}>For Tenants</a>
+      <a href="#investors" className="hover:text-[#A8D5BA]" onClick={() => setIsMenuOpen(false)}>For Investors</a>
+      <a href="#pilot" className="hover:text-[#A8D5BA]" onClick={() => setIsMenuOpen(false)}>Pilot Property</a>
+      <a href="#roadmap" className="hover:text-[#A8D5BA]" onClick={() => setIsMenuOpen(false)}>Roadmap</a>
+      <a href="/whitepaper.pdf" download className="bg-[#A8D5BA] text-white px-6 py-3 rounded-2xl text-center font-semibold">Download Whitepaper</a>
+    </div>
+  )}
+</nav>
 
       {/* HERO */}
       <header className="bg-gradient-to-br from-[#E8F5E9] to-[#B0D8FF] py-16 md:py-20">
@@ -129,7 +134,7 @@ export default function Home() {
                   <circle cx="50" cy="50" r="42.5" fill="none" stroke="#B0D8FF" strokeWidth="15" strokeDasharray="62.8 251.2" strokeDashoffset="188.4" />
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-                  <div className="text-[42px] md:text-[50px] font-bold leading-none">100%</div>
+                  <div className="text-[50px] md:text-[70px] font-bold leading-none">100%</div>
                   <div className="mt-8 flex justify-center gap-6 md:gap-8 text-base font-medium max-w-[300px] md:max-w-[360px] mx-auto">
                     <div className="text-center pr-4 border-r border-[#0F2A44]/20">
                       <span className="block text-[#A8D5BA] text-[17px] font-bold">40%</span>
@@ -174,7 +179,7 @@ export default function Home() {
           </div>
           <div className="text-sm bg-[#E8F5E9] p-8 rounded-3xl flex flex-col justify-center items-center text-center h-full min-h-[260px] mx-auto max-w-full">
             <p className="font-semibold">Pro Forma Example (one unit, 20 years)</p>
-            <p className="text-6xl font-bold text-[#A8D5BA]">$376,920</p>
+            <p className="text-7xl font-bold text-[#A8D5BA]">$376,920</p>
             <p className="text-[#0F2A44]/70">in vested SOLQ rebates while paying below-market rent</p>
           </div>
         </div>
@@ -183,7 +188,7 @@ export default function Home() {
       {/* INVESTORS */}
       <section id="investors" className="bg-[#E8F5E9] py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-semibold text-center mb-8">For Token Holders / Investors – Yields + Governance</h2>
+          <h2 className="text-5xl font-semibold text-center mb-8">For Token Holders / Investors – Yields + Governance</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-3xl">10% of rental income auto-distributed directly into token holders wallet</div>
             <div className="bg-white p-8 rounded-3xl">DAO voting on major decisions, no individual or corporation control</div>
@@ -194,10 +199,10 @@ export default function Home() {
 
       {/* PILOT */}
       <section id="pilot" className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="text-4xl font-semibold text-center mb-8">Property Acquisition Example • 962 N Normandie, Los Angeles</h2>
+        <h2 className="text-2xl font-semibold text-center mb-8">Property Acquisition Example • 962 N Normandie, Los Angeles</h2>
         <div className="bg-white rounded-3xl p-10 text-center">
           <p className="text-2xl">16-unit complex • Built 2020 • $8.2M cash purchase • 5.18% cap rate</p>
-          <p className="mt-8 text-6xl font-bold text-[#A8D5BA]">$585,600 - split between tenants, token holders and PLC</p>
+          <p className="mt-8 text-4xl font-bold text-[#A8D5BA]">$585,600 - split between tenants, token holders and PLC</p>
           <p className="text-sm text-[#0F2A44]/60">Annual gross potential rental income</p>
         </div>
       </section>
