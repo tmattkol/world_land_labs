@@ -113,11 +113,11 @@ export default function Home() {
 
       {/* PROBLEM */}
       <section className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="text-4xl font-semibold text-center mb-8">The Housing Crisis Is Real</h2>
+        <h2 className="text-4xl font-semibold text-center mb-8">It's Time To Rethink Your Housing Needs</h2>
         <div className="grid md:grid-cols-3 gap-8 text-center">
-          <div className="bg-white p-8 rounded-3xl shadow-sm">Median U.S. home price: $415,200 (Q4 2025)</div>
-          <div className="bg-white p-8 rounded-3xl shadow-sm">Investors bought up to 33% of single-family homes</div>
-          <div className="bg-white p-8 rounded-3xl shadow-sm">40% of renters never expect to own a home</div>
+          <div className="bg-white p-8 rounded-3xl shadow-sm">Median home price in the U.S.: $415,200 (Q4 2025). Government subsidies and over regulation contribute.</div>
+          <div className="bg-white p-8 rounded-3xl shadow-sm">Institutional Investors bought up to 33% of SFR in the U.S., stop letting them hold you hostage with high rents.</div>
+          <div className="bg-white p-8 rounded-3xl shadow-sm">40% of renters never expect to own a home pushing them off one of the savings avenues, it's time to save without owning.</div>
         </div>
       </section>
 
@@ -155,9 +155,9 @@ export default function Home() {
             <div className="space-y-5 text-lg">
               <p className="text-2xl leading-tight">Rent paid → Smart contract auto-splits instantly.</p>
               <ul className="space-y-4">
-                <li className="flex gap-3"><span className="text-[#A8D5BA] font-bold text-2xl">40%</span> Tenants receive locked SOLQ rebates (10% vests yearly for 10 years)</li>
-                <li className="flex gap-3"><span className="text-[#0F2A44] font-bold text-2xl">50%</span> Property Life Constitution (upgrades, maintenance, MLB concierge services)</li>
-                <li className="flex gap-3"><span className="text-[#B0D8FF] font-bold text-2xl">10%</span> SOLQ token holders receive automatic yield distributions</li>
+                <li className="flex gap-3"><span className="text-[#A8D5BA] font-bold text-2xl">40%</span> Tenants receive locked SOLQ rebates, long term investment maintains robust ecosystem integrity (10% vests yearly for 10 years)</li>
+                <li className="flex gap-3"><span className="text-[#0F2A44] font-bold text-2xl">50%</span> Property Life Constitution (management, maintenance, MLB concierge services, updates/remodels)</li>
+                <li className="flex gap-3"><span className="text-[#B0D8FF] font-bold text-2xl">10%</span> Smart Contracts ensure SOLQ token holders receive automatic yield distributions directly to their wallets</li>
               </ul>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function Home() {
           <div className="text-sm bg-[#E8F5E9] p-8 rounded-3xl flex flex-col justify-center items-center text-center h-full min-h-[260px] mx-auto max-w-full">
             <p className="font-semibold">Pro Forma Example (one unit, 20 years)</p>
             <p className="text-7xl font-bold text-[#A8D5BA]">$376,920</p>
-            <p className="text-[#0F2A44]/70">in vested SOLQ rebates while paying below-market rent</p>
+            <p className="text-[#0F2A44]/70">in vested SOLQ rebates while paying below-market rent. Amount can vary based on amount of rent paid for different rental units and in and length of time renting.</p>
           </div>
         </div>
       </section>
@@ -190,16 +190,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-5xl font-semibold text-center mb-8">For Token Holders / Investors – Yields + Governance</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-3xl">10% of rental income auto-distributed directly into token holders wallet</div>
-            <div className="bg-white p-8 rounded-3xl">DAO voting on major decisions, no individual or corporation control</div>
-            <div className="bg-white p-8 rounded-3xl">Real-time portfolio tracking + staking rewards controlled inside wallet</div>
+            <div className="bg-white p-8 rounded-3xl">10% of rental income auto-distributed directly into token holders wallet.</div>
+            <div className="bg-white p-8 rounded-3xl">DAO voting on major decisions, no individual or corporation control.</div>
+            <div className="bg-white p-8 rounded-3xl">Real-time portfolio tracking + staking rewards controlled inside App.</div>
           </div>
         </div>
       </section>
 
       {/* PILOT */}
       <section id="pilot" className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="text-2xl font-semibold text-center mb-8">Property Acquisition Example • 962 N Normandie, Los Angeles</h2>
+        <h2 className="text-1xl font-semibold text-center mb-8">Property Acquisition Example • 962 N Normandie, Los Angeles</h2>
         <div className="bg-white rounded-3xl p-10 text-center">
           <p className="text-2xl">16-unit complex • Built 2020 • $8.2M cash purchase • 5.18% cap rate</p>
           <p className="mt-8 text-4xl font-bold text-[#A8D5BA]">$585,600 - split between tenants, token holders and PLC</p>
@@ -209,11 +209,11 @@ export default function Home() {
 
       {/* MLB */}
       <section className="max-w-7xl mx-auto px-6 py-20 bg-[#B0D8FF]/10">
-        <h2 className="text-4xl font-semibold text-center mb-12">Making Life Better (MLB) Services - Will be available in the future</h2>
+        <h2 className="text-3xl font-semibold text-center mb-12">Making Life Better (MLB) Services - Available soon after property acquisition</h2>
         <div className="grid md:grid-cols-3 gap-6 text-center">
-          <div className="bg-white p-8 rounded-3xl">Concierge deliveries during working hours 9AM–5PM</div>
-          <div className="bg-white p-8 rounded-3xl">Disaster support; safe home/neighborhood havens</div>
-          <div className="bg-white p-8 rounded-3xl">Amazon/grocery order pickups, food delivery at a later date</div>
+          <div className="bg-white p-8 rounded-3xl">Concierge deliveries Amazon/grocery/food delivery during working hours 9AM–5PM first come first serve.</div>
+          <div className="bg-white p-8 rounded-3xl">Disaster support; safe havens home/neighborhood, security priority.</div>
+          <div className="bg-white p-8 rounded-3xl">Automation services will be introduced, use of Optimus when available.</div>
         </div>
       </section>
 
