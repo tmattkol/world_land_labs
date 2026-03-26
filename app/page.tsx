@@ -179,7 +179,7 @@ export default function Home() {
           </div>
           <div className="text-sm bg-[#E8F5E9] p-8 rounded-3xl flex flex-col justify-center items-center text-center h-full min-h-[260px] mx-auto max-w-full">
             <p className="font-semibold">Pro Forma Example (one unit, 20 years)</p>
-            <p className="text-7xl font-bold text-[#A8D5BA]">$376,920</p>
+            <p className="text-6xl font-bold text-[#A8D5BA]">$376,920</p>
             <p className="text-[#0F2A44]/70">in vested SOLQ rebates while paying below-market rent. Amount can vary based on amount of rent paid for different rental units and in and length of time renting.</p>
           </div>
         </div>
