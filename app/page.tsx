@@ -121,14 +121,14 @@ export default function Home() {
         </div>
       </section>
 
-          {/* SOLUTION + INCOME SPLIT - Improved pie chart text control */}
+         {/* SOLUTION + INCOME SPLIT - Better spacing below 100% */}
 <section id="how" className="bg-[#E8F5E9] py-20">
   <div className="max-w-7xl mx-auto px-6">
     <h2 className="text-4xl font-semibold text-center mb-12">Rental Income Split – Aligned for Everyone</h2>
     
-    <div className="grid md:grid-cols-2 gap-12 items-center">
+    <div className="grid md:grid-cols-2 gap-8 md:gap-16 lg:gap-20 items-center">
       
-      {/* Pie Chart - Better text control */}
+      {/* Pie Chart Column */}
       <div className="flex justify-center">
         <div className="relative w-full max-w-[340px] md:max-w-[420px] h-[380px] md:h-[420px] mx-auto">
           <svg className="w-full h-full -rotate-20" viewBox="0 0 100 100">
@@ -137,12 +137,11 @@ export default function Home() {
             <circle cx="50" cy="50" r="42.5" fill="none" stroke="#B0D8FF" strokeWidth="15" strokeDasharray="62.8 251.2" strokeDashoffset="188.4" />
           </svg>
 
-          {/* Centered 100% */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
             <div className="text-[58px] md:text-[72px] font-bold leading-none text-[#0F2A44]">100%</div>
             
-            {/* Bottom labels - adjustable size and spacing */}
-            <div className="mt-6 md:mt-10 flex justify-center gap-6 md:gap-8 text-sm md:text-base font-medium max-w-[300px] md:max-w-[360px] mx-auto">
+            {/* Increased spacing below 100% - now 1 clear row space */}
+            <div className="mt-8 md:mt-12 flex justify-center gap-6 md:gap-8 text-sm md:text-base font-medium max-w-[300px] md:max-w-[360px] mx-auto">
               <div className="text-center">
                 <span className="block text-[#A8D5BA] text-[17px] md:text-[19px] font-bold">40%</span>
                 <span className="text-[10px] md:text-[11px] leading-tight">Tenants<br/>(vested SOLQ)</span>
@@ -160,7 +159,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Right side text */}
+      {/* Text Column */}
       <div className="space-y-5 text-lg">
         <p className="text-2xl leading-tight">Rent paid → Smart contract auto-splits instantly.</p>
         <ul className="space-y-4">
