@@ -92,8 +92,8 @@ export default function Home() {
           <div className="relative">
             <div className="relative w-full aspect-video md:aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/futuristic_apt_building.jpg"
-                alt="Futuristic circular eco-building"
+                src="/Futuristic_circular_eco-building.jpg"
+                alt="Futuristic_circular_eco-building"
                 fill
                 className="object-cover"
                 priority
@@ -170,10 +170,10 @@ export default function Home() {
         <div className="bg-white rounded-3xl p-10 grid md:grid-cols-2 gap-8">
           <div>
             <ul className="space-y-6 text-lg">
-              <li>Browse &amp; Commit/Rent with integrated screening</li>
+              <li>Browse &amp; Commit/Rent with integrated application screening/approval</li>
               <li>E-sign leases (DocuSign), pay deposit/rent in fiat or SOLQ</li>
-              <li>40% rent back as vested SOLQ (potentially &gt;$376k over 20 years)</li>
-              <li>MLB concierge, maintenance, retail-food orders, disaster support</li>
+              <li>40% rent rebate as vested SOLQ (potential for &gt;$376k over 20 years)</li>
+              <li>MLB concierge, maintenance, retail/food orders, disaster support</li>
               <li>Vote on important issues (weighted by tenancy length)</li>
             </ul>
           </div>
