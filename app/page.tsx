@@ -121,48 +121,66 @@ export default function Home() {
         </div>
       </section>
 
-           {/* SOLUTION + INCOME SPLIT */}
-      <section id="how" className="bg-[#E8F5E9] py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-semibold text-center mb-12">Rental Income Split – Aligned for Everyone</h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
-              <div className="relative w-full max-w-[340px] md:max-w-[420px] h-[380px] md:h-[420px] overflow-visible mx-auto">
-                <svg className="w-full h-full -rotate-20" viewBox="0 0 100 100">
-                  <circle cx="50" cy="50" r="42.5" fill="none" stroke="#A8D5BA" strokeWidth="15" strokeDasharray="251.2 0" />
-                  <circle cx="50" cy="50" r="42.5" fill="none" stroke="#0F2A44" strokeWidth="15" strokeDasharray="62.8 251.2" strokeDashoffset="251.2" />
-                  <circle cx="50" cy="50" r="42.5" fill="none" stroke="#B0D8FF" strokeWidth="15" strokeDasharray="62.8 251.2" strokeDashoffset="188.4" />
-                </svg>
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-                  <div className="text-[50px] md:text-[70px] font-bold leading-none">100%</div>
-                  <div className="mt-8 flex justify-center gap-6 md:gap-8 text-base font-medium max-w-[300px] md:max-w-[360px] mx-auto">
-                    <div className="text-center pr-4 border-r border-[#0F2A44]/20">
-                      <span className="block text-[#A8D5BA] text-[17px] font-bold">40%</span>
-                      <span className="text-[9px]">Tenants<br/>(vested SOLQ)</span>
-                    </div>
-                    <div className="text-center">
-                      <span className="block text-[#0F2A44] text-[17px] font-bold">50%</span>
-                      <span className="text-[9px]">PLC Fund<br/>(MLB + ops)</span>
-                    </div>
-                    <div className="text-center pl-4 border-l border-[#0F2A44]/20">
-                      <span className="block text-[#B0D8FF] text-[17px] font-bold">10%</span>
-                      <span className="text-[9px]">Token Holders</span>
-                    </div>
-                  </div>
-                </div>
+          {/* SOLUTION + INCOME SPLIT - Improved pie chart text control */}
+<section id="how" className="bg-[#E8F5E9] py-20">
+  <div className="max-w-7xl mx-auto px-6">
+    <h2 className="text-4xl font-semibold text-center mb-12">Rental Income Split – Aligned for Everyone</h2>
+    
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      
+      {/* Pie Chart - Better text control */}
+      <div className="flex justify-center">
+        <div className="relative w-full max-w-[340px] md:max-w-[420px] h-[380px] md:h-[420px] mx-auto">
+          <svg className="w-full h-full -rotate-20" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="42.5" fill="none" stroke="#A8D5BA" strokeWidth="15" strokeDasharray="251.2 0" />
+            <circle cx="50" cy="50" r="42.5" fill="none" stroke="#0F2A44" strokeWidth="15" strokeDasharray="62.8 251.2" strokeDashoffset="251.2" />
+            <circle cx="50" cy="50" r="42.5" fill="none" stroke="#B0D8FF" strokeWidth="15" strokeDasharray="62.8 251.2" strokeDashoffset="188.4" />
+          </svg>
+
+          {/* Centered 100% */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+            <div className="text-[58px] md:text-[72px] font-bold leading-none text-[#0F2A44]">100%</div>
+            
+            {/* Bottom labels - adjustable size and spacing */}
+            <div className="mt-6 md:mt-10 flex justify-center gap-6 md:gap-8 text-sm md:text-base font-medium max-w-[300px] md:max-w-[360px] mx-auto">
+              <div className="text-center">
+                <span className="block text-[#A8D5BA] text-[17px] md:text-[19px] font-bold">40%</span>
+                <span className="text-[10px] md:text-[11px] leading-tight">Tenants<br/>(vested SOLQ)</span>
               </div>
-            </div>
-            <div className="space-y-5 text-lg">
-              <p className="text-2xl leading-tight">Rent paid → Smart contract auto-splits instantly.</p>
-              <ul className="space-y-4">
-                <li className="flex gap-3"><span className="text-[#A8D5BA] font-bold text-2xl">40%</span> Tenants receive locked SOLQ rebates, long term investment maintains robust ecosystem integrity (10% vests yearly for 10 years)</li>
-                <li className="flex gap-3"><span className="text-[#0F2A44] font-bold text-2xl">50%</span> Property Life Constitution (management, maintenance, MLB concierge services, updates/remodels)</li>
-                <li className="flex gap-3"><span className="text-[#B0D8FF] font-bold text-2xl">10%</span> Smart Contracts ensure SOLQ token holders receive automatic yield distributions directly to their wallets</li>
-              </ul>
+              <div className="text-center">
+                <span className="block text-[#0F2A44] text-[17px] md:text-[19px] font-bold">50%</span>
+                <span className="text-[10px] md:text-[11px] leading-tight">PLC Fund<br/>(MLB + ops)</span>
+              </div>
+              <div className="text-center">
+                <span className="block text-[#B0D8FF] text-[17px] md:text-[19px] font-bold">10%</span>
+                <span className="text-[10px] md:text-[11px] leading-tight">Token Holders</span>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Right side text */}
+      <div className="space-y-5 text-lg">
+        <p className="text-2xl leading-tight">Rent paid → Smart contract auto-splits instantly.</p>
+        <ul className="space-y-4">
+          <li className="flex gap-3">
+            <span className="text-[#A8D5BA] font-bold text-2xl">40%</span> 
+            Tenants receive locked SOLQ rebates, long term investment maintains robust ecosystem integrity (10% vests yearly for 10 years)
+          </li>
+          <li className="flex gap-3">
+            <span className="text-[#0F2A44] font-bold text-2xl">50%</span> 
+            Property Life Constitution (management, maintenance, MLB concierge services, updates/remodels)
+          </li>
+          <li className="flex gap-3">
+            <span className="text-[#B0D8FF] font-bold text-2xl">10%</span> 
+            Smart Contracts ensure SOLQ token holders receive automatic yield distributions directly to their wallets
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* TENANTS - Clean & Mobile Optimized */}
       <section id="tenants" className="max-w-7xl mx-auto px-6 py-20">
