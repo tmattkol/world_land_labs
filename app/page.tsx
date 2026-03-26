@@ -164,7 +164,7 @@ export default function Home() {
         </div>
       </section>
 
-    {/* TENANTS - Simplified for better mobile centering */}
+   {/* TENANTS - Simplified + adjustable number size for mobile */}
 <section id="tenants" className="max-w-7xl mx-auto px-6 py-20">
   <h2 className="text-4xl font-semibold text-center mb-12 px-4">
     For Tenants – Ease of Living + Wealth Building Thru App and Website
@@ -185,7 +185,12 @@ export default function Home() {
     {/* Pro Forma Green Box */}
     <div className="bg-[#E8F5E9] p-8 rounded-3xl text-center">
       <p className="font-semibold text-base">Pro Forma Example (one unit, 20 years)</p>
-      <p className="text-6xl md:text-5xl font-bold text-[#A8D5BA] my-3">$376,920</p>
+      
+      {/* Adjustable number size */}
+      <p className="text-[2.00 rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#A8D5BA] my-3 leading-none">
+        $376,920
+      </p>
+      
       <p className="text-[#0F2A44]/70 text-sm leading-relaxed">
         in vested SOLQ rebates while paying below-market rent. 
         Amount can vary based on amount of rent paid for different rental units 
