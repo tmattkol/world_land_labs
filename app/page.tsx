@@ -187,7 +187,7 @@ export default function Home() {
       <p className="font-semibold text-base">Pro Forma Example (one unit, 20 years)</p>
       
       {/* Adjustable number size */}
-      <p className="text-[2.50 rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#A8D5BA] my-3 leading-none">
+      <p className="text-[3.00 rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#A8D5BA] my-3 leading-none">
         $376,920
       </p>
       
