@@ -216,7 +216,7 @@ export default function Home() {
         <h2 className="text-1xl font-semibold text-center mb-8">Property Acquisition Example • 962 N Normandie, Los Angeles</h2>
         <div className="bg-white rounded-3xl p-10 text-center">
           <p className="text-2xl">16-unit complex • Built 2020 • $8.2M cash purchase • 5.18% cap rate</p>
-          <p className="mt-8 text-4xl font-bold text-[#A8D5BA]">$585,600 - split between tenants, token holders and PLC</p>
+          <p className="mt-8 text-4xl font-bold text-[#A8D5BA]">$585,600 - split between tenants, token holders, PLC</p>
           <p className="text-sm text-[#0F2A44]/60">Annual gross potential rental income</p>
         </div>
       </section>
