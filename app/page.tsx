@@ -186,7 +186,7 @@ export default function Home() {
           <div className="bg-[#E8F5E9] p-8 rounded-3xl text-center">
             <p className="font-semibold text-base">Pro Forma Example (one unit, 20 years)</p>
             
-            <p className="text-[2.75rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#A8D5BA] my-4 leading-none">
+            <p className="text-[2.50rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#A8D5BA] my-4 leading-none">
               $376,920
             </p>
             
