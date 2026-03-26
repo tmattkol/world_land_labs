@@ -16,7 +16,7 @@ export default function Home() {
       {/* Container sized for downward growth - NO overflow-hidden */}
       <div className="relative w-[190px] h-[140px] flex-shrink-0">
         <div 
-          className="absolute top-1/2 left-0 -translate-y-1/2 transition-transform duration-300 hover:scale-[5] origin-top z-10"
+          className="absolute top-1/2 left-0 -translate-y-1/2 transition-transform duration-300 hover:scale-[5] origin-top-left z-10"
         >
           <Image
             src="/wll_logo.png"
