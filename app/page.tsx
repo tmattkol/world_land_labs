@@ -164,26 +164,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TENANTS */}
-      <section id="tenants" className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="text-4xl font-semibold text-center mb-8">For Tenants – Ease of Living + Wealth Building Thru App and Website</h2>
-        <div className="bg-white rounded-3xl p-10 grid md:grid-cols-2 gap-8">
-          <div>
-            <ul className="space-y-6 text-lg">
-              <li>Browse &amp; Commit/Rent with integrated application screening/approval</li>
-              <li>E-sign leases (DocuSign), pay deposit/rent in fiat or SOLQ</li>
-              <li>40% rent rebate as vested SOLQ (potential for &gt;$376k over 20 years)</li>
-              <li>MLB concierge, maintenance, retail/food orders, disaster support</li>
-              <li>Vote on important issues (weighted by tenancy length)</li>
-            </ul>
-          </div>
-          <div className="text-sm bg-[#E8F5E9] p-8 rounded-3xl flex flex-col justify-center items-center text-center h-full min-h-[260px] mx-auto max-w-full">
-            <p className="font-semibold">Pro Forma Example (one unit, 20 years)</p>
-            <p className="text-6xl font-bold text-[#A8D5BA]">$376,920</p>
-            <p className="text-[#0F2A44]/70">in vested SOLQ rebates while paying below-market rent. Amount can vary based on amount of rent paid for different rental units and in and length of time renting.</p>
-          </div>
-        </div>
-      </section>
+     {/* TENANTS */}
+<section id="tenants" className="max-w-7xl mx-auto px-6 py-20">
+  <h2 className="text-4xl font-semibold text-center mb-8">For Tenants – Ease of Living + Wealth Building Thru App and Website</h2>
+  
+  <div className="bg-white rounded-3xl p-8 md:p-10">
+    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+      
+      {/* Left column - bullet list */}
+      <div className="space-y-6 text-lg leading-relaxed">
+        <ul className="space-y-6">
+          <li>Browse &amp; Commit/Rent with integrated application screening/approval</li>
+          <li>E-sign leases (DocuSign), pay deposit/rent in fiat or SOLQ</li>
+          <li>40% rent rebate as vested SOLQ (potential for &gt;$376k over 20 years)</li>
+          <li>MLB concierge, maintenance, retail/food orders, disaster support</li>
+          <li>Vote on important issues (weighted by tenancy length)</li>
+        </ul>
+      </div>
+
+      {/* Right column - Pro Forma box */}
+      <div className="text-sm bg-[#E8F5E9] p-8 rounded-3xl flex flex-col justify-center items-center text-center h-full min-h-[260px] mx-auto w-full max-w-full">
+        <p className="font-semibold">Pro Forma Example (one unit, 20 years)</p>
+        <p className="text-6xl md:text-7xl font-bold text-[#A8D5BA] mt-2">$376,920</p>
+        <p className="text-[#0F2A44]/70 mt-4">
+          in vested SOLQ rebates while paying below-market rent. Amount can vary based on 
+          amount of rent paid for different rental units and in and length of time renting.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* INVESTORS */}
       <section id="investors" className="bg-[#E8F5E9] py-20">
