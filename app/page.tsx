@@ -185,7 +185,7 @@ export default function Home() {
     {/* Pro Forma Green Box */}
     <div className="bg-[#E8F5E9] p-8 rounded-3xl text-center">
       <p className="font-semibold text-base">Pro Forma Example (one unit, 20 years)</p>
-      <p className="text-6xl md:text-7xl font-bold text-[#A8D5BA] my-3">$376,920</p>
+      <p className="text-6xl md:text-6xl font-bold text-[#A8D5BA] my-3">$376,920</p>
       <p className="text-[#0F2A44]/70 text-sm leading-relaxed">
         in vested SOLQ rebates while paying below-market rent. 
         Amount can vary based on amount of rent paid for different rental units 
